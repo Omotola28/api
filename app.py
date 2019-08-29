@@ -11,7 +11,7 @@ UPLOAD_FOLDER = "C:/Users/omotola.shogunle/PycharmProjects/api/resources/"
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'html'}
 
 
-app = Flask(__name__, template_folder='C:/Users/omotola.shogunle/PycharmProjects/api/template')
+app = Flask(__name__, template_folder='template')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 basedir = os.path.abspath(os.path.dirname(__file__))
 
