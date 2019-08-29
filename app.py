@@ -7,7 +7,7 @@ import PyPDF2
 import textract
 import re
 
-UPLOAD_FOLDER = "C:/Users/omotola.shogunle/PycharmProjects/api/resources/"
+UPLOAD_FOLDER = "resources/"
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'html'}
 
 
@@ -83,7 +83,7 @@ def add_product():
         filename = secure_filename(file.filename)
         print(filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        text = extract_text("C:/Users/omotola.shogunle/PycharmProjects/api/resources/" + filename)
+        text = extract_text("resources/" + filename)
         f = open("demofile.txt", "wb")
         f.write(text)
         f.close()
