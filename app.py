@@ -7,11 +7,11 @@ import PyPDF2
 import textract
 import re
 
-UPLOAD_FOLDER = "C:/Users/omotola.shogunle/PycharmProjects/api/app/resources/"
+UPLOAD_FOLDER = "C:/Users/omotola.shogunle/PycharmProjects/api/resources/"
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'html'}
 
 
-app = Flask(__name__, template_folder='C:/Users/omotola.shogunle/PycharmProjects/api/app/template')
+app = Flask(__name__, template_folder='C:/Users/omotola.shogunle/PycharmProjects/api/template')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -83,7 +83,7 @@ def add_product():
         filename = secure_filename(file.filename)
         print(filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        text = extract_text("C:/Users/omotola.shogunle/PycharmProjects/api/app/resources/" + filename)
+        text = extract_text("C:/Users/omotola.shogunle/PycharmProjects/api/resources/" + filename)
         f = open("demofile.txt", "wb")
         f.write(text)
         f.close()
