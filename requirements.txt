@@ -32,5 +32,5 @@ virtualenv-clone==0.5.3
 Werkzeug==0.15.5
 xlrd==1.2.0
 XlsxWriter==1.2.0
-poppler==poppler-0.79.0.tar.xz
+poppler-0.79.0.tar.xz
 
