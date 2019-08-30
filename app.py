@@ -1,7 +1,5 @@
 from flask import Flask, request, jsonify, render_template
 from werkzeug.utils import secure_filename
-
-
 import os
 import PyPDF2
 import textract
