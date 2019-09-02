@@ -15,4 +15,8 @@ sox
 libjpeg-dev
 swig
 libpulse-dev
-tesse
+pocketsphinx
+cython
+build-essential
+libasound2-dev
+
