@@ -1,2 +1,17 @@
 libpoppler-cpp-dev
 poppler-utils
+libxml2-dev
+libxslt1-dev
+antiword
+unrtf
+pstotext
+tesseract-ocr
+flac
+ffmpeg
+lame
+libmad0
+libsox-fmt-mp3
+sox
+libjpeg-dev
+swig
+libpulse-dev
