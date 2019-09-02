@@ -19,4 +19,5 @@ pocketsphinx
 cython
 build-essential
 libasound2-dev
+tesseract
 
